@@ -16,7 +16,6 @@ require 'pry'
   
 def remove_strawberry(contacts)
   contacts.each do |name|
-        binding.pry
     name[1][:favorite_ice_cream_flavors].each_with_index do |i, index|
       if i == "strawberry"
         name[1][:favorite_ice_cream_flavors][index].delete
