@@ -18,6 +18,7 @@ def remove_strawberry(contacts)
   contacts.each do |name|
     name[favorite_ice_cream_flavors].each_with_index do |i, index|
       if i == "strawberry"
+        binding.pry
         name[favorite_ice_cream_flavors][index].delete
       end
     end
